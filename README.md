@@ -8,6 +8,12 @@
   this website is built using gatsby
 </h1>
 
+**Pre Start**
+
+first write `npm i` to install node modules  
+
+npm that i use is : 14+
+
 **Start** 
    
    start using : `gatsby develop` : http://localhost:8000
