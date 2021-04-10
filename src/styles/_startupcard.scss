@@ -1,0 +1,111 @@
+.startup{
+    padding: 0;
+    display: flex;
+    .startupcard{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        height: 23em;
+        width: 20em;
+    
+    
+        position: relative;
+        box-sizing: border-box;
+    
+        padding: 2em;
+        margin-right: 2em;
+        &:last-child{
+            margin: 0;
+        }
+        $border: 5px;
+        color: black;
+        background: $backgroundColor;
+        background-clip: padding-box;  
+        border: solid $border transparent;  
+        border-radius: 14%;
+    
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            z-index: -1;
+            margin: -$border;  
+            border-radius: inherit; 
+            background: linear-gradient(to right, red, orange);
+        }
+
+        .startupcard-image{
+            width: 7em;
+        }
+        
+        &:nth-child(4) {
+           .startupcard-image{
+            width: 15em;
+           }
+            
+          }
+        &:last-child {
+           .startupcard-image{
+            width: 15em;
+           }
+          }
+
+        .startupcard-image-orovolt{
+            width: 15em;
+        }
+    
+          .details {
+            display: flex;
+            flex-direction: column;
+            bottom: 4em;    
+            position: absolute;
+            @mixin giveandlearn {
+                background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
+                border-radius: 1em;
+                margin-right: .2em;
+                a{
+                    color: $backgroundColor;
+                    text-decoration: none;
+                }
+            }
+            .give{
+                @include giveandlearn();
+            }
+            .learn{
+                @include giveandlearn();
+                background: linear-gradient(161.32deg, #FF00B8 3.86%, #151371 98.64%);
+                border-radius: 1em;
+            }
+        
+            button{
+                padding: 0.5em;
+                width: 5em;
+                // font-size: 1em;
+                font-size: 1.5em;
+                color: $backgroundColor;
+            }
+            .funding{
+                // position: absolute;
+                // top: 17em;
+            }
+            .progressbar{
+                // position: absolute;
+                // top: 20em;
+                div{
+                    div{
+                        background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
+                    }
+                }
+        
+            }
+            .percent{
+                align-self: flex-end;
+                display: flex;
+                margin: 0;
+                margin-top: .2em;
+            }
+          }
+        
+    }
+}

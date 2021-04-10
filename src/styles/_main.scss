@@ -1,0 +1,116 @@
+.main{
+    background: $backgroundColor;
+    border-radius: 4%;
+    // height: 80vh;
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    height: 120vh;
+    margin-top: 3vh;
+    padding-top: 50vh;
+    position: relative;
+
+    .buttons{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 2em;
+        .main-button{
+            padding: 0.5em;
+            width: 12em;
+            font-size: 1.5em;
+            color: $backgroundColor;
+            background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
+            border-radius: 1em;
+            margin-right: .2em;
+        }
+
+        @include bp("larger"){
+            .main-button{
+                width: 16em;
+                height: 3em;
+            }
+        }
+    }
+
+    h3{
+        margin-left: 1em;
+        font-size: 2em;
+        color: $textColor;
+        font-weight: 700;
+    }
+}
+
+@include bp("larger"){
+    .main{
+        height: 140vh;
+    }
+}
+
+
+.main-banner{
+    height: 40vh;
+    // background-color: aqua;
+    background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
+    z-index: 5;
+    width: 96vw;
+    position: absolute;
+    left: 1.7vw;
+    top: 23vh;
+    display: flex;
+    align-items: center;
+    h3{
+        
+        font-weight:700;
+        font-size: 2.5em;
+        color: $backgroundColor;
+        margin: 0;
+        display: flex;
+        align-self: center;
+    }
+    @include bp("larger"){
+        h3{
+            font-size: 4em;
+        }
+    }
+}
+
+.main-startup{
+    display: flex;
+    justify-content: space-around;
+    font-size: 54%;
+}
+
+@include bp("larger"){
+    .main-startup{
+        font-size: 75%;
+    }
+}
+
+// svg
+
+.globe {
+    width: 21em;
+    height: 17em;
+}
+.hand {
+    height: 20em;
+    width: 10em;
+}
+
+
+.people{
+    height: 8em;
+    width: 10em;
+    position: absolute;
+    left: 48em;
+    top: 4vh;
+}
+@include bp("larger"){
+    .people{
+        height: 7em;
+        width: 16em;
+        left: 59em;
+    }
+}
+

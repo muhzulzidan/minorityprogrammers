@@ -1,0 +1,33 @@
+.startup{
+    .blockchain{
+        svg{
+            width: 6em;
+            position: absolute;
+            top: 0em;
+            display: flex;
+            align-self: flex-end;
+        }
+        h2{
+            margin: 0;
+            margin-top: .2em;
+            font-size: 2.5em;
+        }
+        .details{
+            bottom: 2em;
+            .learn{
+                width: 10em;
+            }
+            .funding{
+                margin:0;
+                margin-top: .2em;
+                margin-bottom: .2em;
+
+                display: flex;
+                align-self: flex-end;
+                
+                font-family: "Red Hat Display", sans-serif;
+                font-size: 1.5em;
+            }
+        }
+    }
+}

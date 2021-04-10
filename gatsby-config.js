@@ -10,12 +10,27 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/images/logo.png",
       },
     },
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: "./src/data",
+        name: `markdown-pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/`,
+        name: `data`,
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -32,5 +47,15 @@ module.exports = {
       },
       __key: "pages",
     },
+    "gatsby-transformer-remark",
+
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /\.inline\.svg$/
+        }
+      }
+    }
   ],
 };

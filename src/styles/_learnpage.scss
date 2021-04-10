@@ -1,0 +1,24 @@
+.learnpage-main{
+    height: 150vh;
+    .category{
+        svg{
+            height: 25em;
+        }
+
+    }
+}
+
+.learnpage-banner{
+    color: $backgroundColor;
+    .text{
+        h3{
+            font-size: 2em;
+        }
+        h4{
+            justify-content: flex-end;
+            display: flex;
+            margin: 0;
+        }
+    }
+
+}

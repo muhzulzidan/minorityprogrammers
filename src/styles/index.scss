@@ -1,0 +1,32 @@
+@import "./normalize";
+@import "./breakpoints";
+@import "./color";
+@import "./main";
+@import "./nav";
+@import "./social";
+@import "./startupcard";
+@import "./learnpage";
+@import "./blockchain";
+
+html {
+    background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
+    // font-size: 0.7em;
+    font-family : "Roboto", sans-serif;
+    button{
+        border: none;
+        outline: inherit;
+    }
+    h3{
+        font-family: "Red Hat Display", sans-serif;
+    }
+    a{
+        &:hover{
+            color: $mainColor;
+        }
+    }
+}
+@include bp("exact"){
+    html{
+        font-size: 157%;
+    }
+}

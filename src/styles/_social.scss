@@ -1,0 +1,33 @@
+.social-div{
+    display: flex;
+    flex-direction: column;
+    font-size: .8em;
+    h3{
+        margin-bottom: unset;
+    }
+    .social-div-icon{
+        display: flex;
+        a{
+            margin-left: 2em;
+            box-shadow: none;
+                &:nth-child(1){
+                    margin-left: 0;
+                    box-shadow: none;
+                }
+            svg{
+                font-size: 1.5em;
+                color: $textColor1;   
+                &:hover{
+                    transition-duration: .2s;
+                    color: $mainColor;
+                } 
+            }
+
+        }
+    }
+}
+
+.social-partner-div{
+    display: flex;
+}
+
