@@ -42,10 +42,10 @@ const LearnPage = ({data}) => {
           </div>
           <h3>By Category</h3>
           <div className="main-startup category">
-              <Science/>
-              <Programming/>
-              <Innovation/>
               <Enginering/>
+              <Science/>
+              <Innovation/>
+              <Programming/>
           </div>
       </main>
     </React.Fragment>
@@ -62,6 +62,9 @@ query LearnQuery {
     edges {
       node {
         id
+        fields{
+          slug
+        }
         frontmatter {
           title
           ProjectName

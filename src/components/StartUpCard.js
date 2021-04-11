@@ -33,7 +33,8 @@ const StartUpCard = ({ data}) => {
                  <div className="details">
                      <div className="buttons">
                          <button className="give"><Link to={node.frontmatter.GiveLink}>GIVE</Link></button>
-                         <button className="learn"><Link to={node.frontmatterLearnLink}>LEARN</Link></button>
+                         <button className="learn"><Link to={node.fields.slug}>LEARN</Link></button>
+                         {console.log(node.fields.slug)}
                      </div>
                      <p className="funding">
                          <NumberFormat value={node.frontmatter.CurrentFunding} displayType={'text'} thousandSeparator={true} prefix={'$'} /> / <NumberFormat value={node.frontmatter.FundingGoal} displayType={'text'} thousandSeparator={true} prefix={'$'} /> 
@@ -53,7 +54,7 @@ const StartUpCard = ({ data}) => {
                  </p>
                  <div className="details">
                      <div className="buttons">
-                         <button className="learn"><Link to={node.frontmatterLearnLink}>LEARN</Link></button>
+                        <button className="learn"><Link to={node.fields.slug}>LEARN</Link></button>
                      </div>
                      <p className="funding">
                             8.3/10 Modules 
@@ -76,7 +77,7 @@ const StartUpCard = ({ data}) => {
                             <div className="details">
                                 <div className="buttons">
                                     <button className="give"><Link to={node.frontmatter.GiveLink}>GIVE</Link></button>
-                                    <button className="learn"><Link to={node.frontmatterLearnLink}>LEARN</Link></button>
+                                    <button className="learn"><Link to={node.fields.slug}>LEARN</Link></button>
                                 </div>
                                 <p className="funding">
                                     <NumberFormat value={node.frontmatter.CurrentFunding} displayType={'text'} thousandSeparator={true} prefix={'$'} /> / <NumberFormat value={node.frontmatter.FundingGoal} displayType={'text'} thousandSeparator={true} prefix={'$'} /> 

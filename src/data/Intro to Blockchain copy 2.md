@@ -2,7 +2,7 @@
 number : 2
 ProjectName: "Intro to Blockchain"   
 GiveLink: "#"   
-LearnLink: "#"   
+LearnLink: "Intro to Blockchain"   
 ProjectDescription: "blockchain, cryptocurrency fundamentals"   
 CurrentFunding: 83000   
 FundingGoal: 100000    

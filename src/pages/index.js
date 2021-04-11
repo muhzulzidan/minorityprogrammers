@@ -52,6 +52,9 @@ query MyQuery {
     edges {
       node {
         id
+        fields {
+          slug
+        }
         frontmatter {
           title
           ProjectName
@@ -75,6 +78,9 @@ query MyQuery {
     edges {
       node {
         id
+        fields {
+          slug
+        }
         frontmatter {
           title
           ProjectName
